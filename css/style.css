@@ -22,19 +22,108 @@
 	clear: both;
 }
 
-/* Box Model Hack */
+/* Global  */
 *{
      box-sizing: border-box;
-   }
+     font-family: monospace;
+}
+
+html {
+     font-size: 16px;
+}
+
+
    
-   /******************************************
-   /* LAYOUT
-   /*******************************************/
+button {
+     display: block;
+     margin: 25px;
+     margin-left: 50px;
+     padding: 5px;
+     width: 125px;
+     background-color: #75ebd1;
+     border: 2px solid #6B818C;
+     border-radius: 4px;
+}
+
+button:hover {
+     filter: drop-shadow(10px 10px 10px black);
+     /* filter: drop-shadow(0 0 10px black); */
+     animation: buttonHover 0.1s infinite;
+}
+
+button:active {
+     filter: drop-shadow(0 0 20px black);
+
+}
+
+@keyframes buttonHover {
+     25% {filter: drop-shadow(5px -5px 15px black);}
+     50% {filter: drop-shadow(-5px -5px 15px black);}
+     75% {filter: drop-shadow(-5px 5px 15px black);}
+     100% {filter: drop-shadow(5px 5px 15px black);}
+
+
+
+}
+
  
+h1, h2 {
+     margin: 25px;
+}
+
+body {
+     
+}
+
+main {
+     display: flex;
+     align-content: space-between;
+     padding: 0;
+}
+
+nav {
+
+}
+
+.cont-1 {
+     background: #D8E4FF;
+     max-width: 1000px;
+     border: 2px solid #6B818C;
+     border-radius: 8px;
+     /* padding-bottom: 25px; */
+     margin: 0 25px;
+     filter: drop-shadow(0 0 0.5rem #31E981);
+}
+
+pre {
+     padding: 0 25px;
+     margin: 0 5px;
+     overflow: auto;
+}
+
+code {
+     font-size: 1rem;
+     display: block;
+     overflow-wrap: break-word;
+     white-space: pre-wrap;
+     padding-left: 25px;
+}
 
 
-   
-   /******************************************
-   /* ADDITIONAL STYLES
-   /*******************************************/
-   
+ul {
+     padding: 0;
+     margin: 0 0 0 25px;
+}
+
+
+li {
+     list-style: none;
+     padding-bottom: 25px;
+     margin-left: 0;
+}
+
+
+
+
+
+

@@ -12,12 +12,38 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+
+		<h1>Karsy's The JS Way Coding Tasks</h1>
+
+		<main>
+			<nav>
+
+			</nav>
+
+			<section class="cont-1">
+				<h2>The Task</h2>
+					<pre><code id="codeGoesHere">// Number of days in a month
+// Write a program that accepts a month number (between 1 and 12), then shows the number of days of that month. Leap years are excluded. Incorrect inputs must be taken into account.</code></pre>
+
+				<h2>The Code</h2>
+					<pre><code id="codeGoesHere">let monthNumber = Number(prompt("Enter a month number (Example: 2 = Feburary):"))
+
+if ((monthNumber === 1) || (monthNumber === 3) || (monthNumber === 5) || (monthNumber === 7) || (monthNumber === 8) || (monthNumber === 10) || (monthNumber === 12)) {
+    console.log("This Month has 31 Days")
+} else if (monthNumber === 2) {
+    console.log("This Month has 28 Days and 29 on Leap Years")
+} else if ((monthNumber === 4) || (monthNumber === 6) || (monthNumber === 9) || (monthNumber === 11)) {
+    console.log("This Month has 30 Days")
+} else {
+    console.log("You did not type a number between 1 and 12")</code></pre>
 	
+				<button onclick="tasksChapter3()">Run Code</button>
+			</section>
+		</main>
 
+		<script type="text/javascript" src="js/tasksChapter3.js"></script>
 
-
-
-
-		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
+
+<!-- Karsyz -->
