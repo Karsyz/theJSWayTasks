@@ -107,7 +107,7 @@ const bankAccount = {
     },
 
     describe() {
-        return `${this.name}'s account balance is $${this.balance}`
+        return `"owner: ${this.name}, balance $${this.balance}"`
     }
 
 }
